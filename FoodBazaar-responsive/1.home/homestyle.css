@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300;400;500&family=Parisienne&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Frank Ruhl Libre', serif;
+}
+/*   font-family: 'Parisienne', cursive;  */
+section{
+    height: 100vh;
+    width: 100vw; 
+    position: relative;
+}
+.header{
+    background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url('homeimages/home1.jpg');
+    background-size: contain;
+    position: relative;
+}
+#check{
+    display: none;
+}
+.checkbtn{
+    color: white;
+    position: absolute;
+    font-size: 20px;
+    line-height: 70px;
+    cursor: pointer;
+    margin-left: 450px;
+    display: none;
+}
+nav{
+    height: 70px;
+    width: 100%;
+    background-color:rgba(0,0,0,0.8); 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    z-index: 1;
+    position: relative;
+}
+nav .logo{
+    height: 60px;
+    width: 100px;
+    background-color:rgba(0,0,0,0.3);
+    text-transform: capitalize;
+    border: none;
+    font-size: 20px;
+    margin-left: 100px;
+    color: white;
+    border-radius: 50%;
+    user-select: none;
+    letter-spacing: 1px;
+    font-family: 'Great Vibes', cursive;
+}
+.menubar #menus{
+    display: flex;
+}
+.menubar ul li{
+    list-style: none;
+    padding: 20px;
+}
+.menubar #menus li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-size: 13px;
+    cursor: pointer;
+    user-select: none;
+    transition: 0.3s ease;
+}
+.menubar #menus li a:hover{
+    color: red;
+}
+nav .social{
+    height: 30px;
+    width: 90px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.35);
+    margin-right: 80px;
+}
+.social .fa{
+    padding: 5px;
+    font-size: 15px;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+nav .social .fa:hover{
+    color: red;
+}
+.header .banner{
+    border: none;
+    height: 90px;
+    width: 300px;
+    margin-top: 150px;
+    margin-left: 20px;
+    background-color: rgba(0,0,0,0.6);
+    border-radius: 120px;
+    color: antiquewhite;
+    text-transform: uppercase;
+    font-size: 18px;
+    position: absolute;   
+}
+.header .banner h1,
+.header .banner h2{
+    font-weight: normal;
+}
+.header .sub h3{
+    position: absolute;
+    text-align: center;
+    left: 830px;
+    top: 180px;
+    color: antiquewhite;
+    width: 200px;
+    font-size: 25px;
+    font-weight: normal;
+    background-color: rgba(0,0,0, 0.6);
+    border-radius: 15px;
+    user-select: none;
+}
+
+.offers{
+    position: absolute;
+    background-color: rgb(0,0,0,0.6);
+    left: 600px;
+    bottom: 40px;
+    height: 350px;
+    width: 650px; 
+    padding: 10px;
+    display: flex; 
+    border-radius: 5px;
+    justify-content: space-between; 
+
+}
+
+.offers .offer{
+    background-color: rgb(0,0,0,0.6);
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.offer .image{
+    height: 150px;
+    width: 200px;
+    overflow: hidden;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.offer .image img{
+    height: 150px;
+    width: 100%;
+  /*  padding: 10px;  */
+    transition: 0.6s ease;
+}
+.offer .image img:hover{
+    transform: scale(1.2);
+}
+.offer .content{
+    height: 180px;
+    width: 200px;
+    background-color: rgba(0,0,0,0.3);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    position: relative;
+}
+.offer .content h4{
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    font-weight: normal;
+    padding: 6px;
+    user-select: none;
+}
+.offer .content h5{
+    text-align: center;
+    font-size: 16px;
+    color: white;
+    font-weight: normal;
+    padding: 2px;
+    user-select: none;
+}
+/*
+.offer .content h6{
+    text-align: center;
+    font-size: 15px;
+    color:rgba(167, 9, 9, 0.795);
+    padding: 2px;
+}
+*/
+.offer .content .rating{
+    font-size: 10px;
+    display: flex;
+    padding: 2px;
+    width: 150px;
+    justify-content: center;
+    align-items: baseline;
+    position: absolute;
+    left: 30px;
+    margin-top: 10px;
+    border: none;
+    user-select: none;
+    background-color: rgba(0,0,0,0.3);
+}
+.offer .content .rating h1{
+    padding: 0 10px;
+    color:white;
+    font-weight: normal;
+}
+.rating .fa{
+    color: white;
+}
+.rating .checked{
+    color: green;
+}
+
+.offer .content .cart{
+    position: absolute;
+    bottom: 35px;
+    left: 55px;
+    padding: 5px 10px;
+    color: white;
+    background-color:rgba(0,0,0,0.8);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.content .cart:hover{
+    color: red;
+}
+@media(max-width:928px){
+    .checkbtn{
+        display: none;
+    }
+    body{
+        background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url('homeimages/home1.jpg');
+        object-fit: cover;
+    }
+    nav .logo{
+        position: absolute;
+        margin-left: 20px;
+    }
+    .menubar #menus{
+        position: absolute;
+        display: inline-block;
+        top: 70px; 
+        margin-left: -10px; 
+        width: 150%;
+        padding-left: 10px;
+        background-color:rgba(0,0,0, 0.6);   
+    }
+    .menubar ul li{
+        display: block;
+        line-height: 10px;
+        position: relative;
+    }
+    nav .social{
+        color: white;
+        
+    }
+    .social .fa{
+        color: white;   
+    }
+    .header .banner{
+        display:none;
+    }
+    .header .sub{
+        position: absolute; 
+        left: -800px;
+        top: 350px;
+        margin-left: 100px;
+    }
+    .offers .offer{
+        position: absolute;
+        z-index: 1;
+        left: -470px;
+        top: 400px; 
+                
+    }
+    .offers .offer+.offer{
+        position: absolute;
+        left: -470px;
+        top: 800px;
+        
+    }
+    .offers .offer+.offer+.offer{
+        position: absolute;
+        left: -470px;
+        top: 1200px;        
+    }
+}

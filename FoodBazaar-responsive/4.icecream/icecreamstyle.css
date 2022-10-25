@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300;400;500&family=Parisienne&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Frank Ruhl Libre', serif;
+}
+
+/*   font-family: 'Parisienne', cursive;  */
+
+section{
+    height: 100vh;
+    width: 100vw; 
+}
+body{
+    background-color:rgba(0, 0, 0, 0.7);
+    background-size: contain;
+}
+.icecream h1, .menubuttons{
+   background-color:rgba(0, 0, 0, 0.6); 
+}
+/*    icecream SECTION   */
+
+.icecream h1{
+    font-size: 30px;
+    color: white;
+    padding: 20px;
+    text-transform: uppercase;
+    font-weight: normal;
+    user-select: none;
+    text-align: center;
+}
+.menubuttons{
+    text-align: center;
+    padding-bottom: 30px;
+}
+.menubuttons a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase; 
+    font-size: 11px;
+    transition: 0.3s ease;
+}
+.menubuttons button{
+    height: 30px;
+    width: 80px;
+    margin-bottom: 20px;
+    background-color: rgba(0,0,0,0.6);
+    border-radius: 50px;
+    border: none;
+    transition: 0.3s ease;
+}
+.menubuttons button:hover a{
+    color:red;
+}
+.icecream .icecreamcontainer{
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.icecream .icecreamcontainer .icecreambox{
+    padding: 10px;
+    margin: 10px;
+    height: 325px;
+    width: 250px;
+    border-radius: 10px;
+    background-color:rgba(0, 0, 0, 0.6);
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+}
+.icecreamcontainer .icecreambox .image img{
+    height: 160px;
+    width: 100%;
+    border-radius: 5px;
+    position: relative;
+    transition: 0.3s ease;
+}
+.icecreamcontainer .icecreambox .image{
+    overflow: hidden;
+}
+.icecreamcontainer .icecreambox .image img:hover{
+    transform: scale(1.2);
+}
+.icecreambox .image .favourites{
+    height: 40px;
+    width: 40px;
+    border: none;
+    border-radius: 20px;
+    margin-left: -50px;
+    margin-top: 10px;    
+    position: absolute;
+    background-color: rgba(0,0,0,0.6);
+}
+.icecreambox .image .favourites i{
+    color: white;
+    font-size: 18px;
+}
+.icecreambox .image .favourites i:hover{
+    color: red;
+}
+
+.icecreambox .content h2{
+    color: white;
+    font-size: 18px;
+    font-weight: normal;
+    margin-top: 5px;
+    text-transform: capitalize;
+    margin-left: 15px;
+}
+.content .rupeebutton{
+    width: 150px;
+    text-align: left;
+    margin-left: 20px;
+    margin-top: 5px;
+    height: 30px;
+    color:white;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.1);
+    font-size: 18px;
+}
+.rupeebutton .fa{
+    padding-right: 3px;
+}
+.icecreambox .content .icecreamrating{
+    font-size: 10px;
+    display: flex;
+    padding: 2px 0;
+    width: 150px;
+    margin-top: 5px;
+    margin-left: 10px;
+    align-items: baseline;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.icecreamrating h3{
+    padding-right: 10px;
+    color:white;
+    font-size: 15px;
+    padding: 0 10px;
+    font-weight: normal;
+}
+.icecreamrating .fa{
+    color: white;
+}
+.icecreamrating .checked{
+    color: green;
+}
+.content .icecreamcart{
+    height:30px;
+    width: 130px;
+    font-size: 15px;
+    border: none;
+    margin-left: 50px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.icecreamcart .fa-shopping-cart{
+    font-size: 15px; 
+}
+.icecreamcart h4{
+    font-weight: normal;
+    transition: 0.3s ease;
+}
+.icecreamcart i:hover{
+    color: red;
+}
+.icecreamcart h4:hover{
+    color: red;
+}
+@media(max-width: 928px){
+    .menubuttons{
+        padding: 10px;
+    }
+}
