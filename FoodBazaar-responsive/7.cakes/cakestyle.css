@@ -177,7 +177,7 @@ body{
 .cakecart h4:hover{
     color: red;
 }
-@media(max-width:928px){
+@media(max-width:768px){
     .menubuttons{
         padding: 10px;
     }
