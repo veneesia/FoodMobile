@@ -93,7 +93,7 @@ footer button i{
     font-size: 3px;
     color: white;
 }
-@media(max-width:928px){
+@media(max-width:768px){
     .panel{
     color: white;
     border: 2px solid white;
